@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>fb.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Logo\logotoolkit.png" />
+    <None Remove="Logo\toolkit24.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="fb.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Wpf" Version="22.1.*-*" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CmCode">
+      <HintPath>..\CmCode\bin\Debug\net6.0-windows\CmCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Logo\logotoolkit.png" />
+    <Resource Include="Logo\toolkit24.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="UCControl\AccessToken.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>

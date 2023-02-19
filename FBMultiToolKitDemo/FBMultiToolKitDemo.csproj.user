@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\hathu\source\repos\FBMultiToolKitDemo\FBMultiToolKitDemo\Properties\PublishProfiles\ClickOnceProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="UCControl\License.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UCControl\PostFB.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UCControl\VideoSpy.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="UCControl\AccessToken.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UCControl\License.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UCControl\PostFB.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UCControl\VideoSpy.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FBMultiToolKitDemo.UCControl"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" x:Class="FBMultiToolKitDemo.UCControl.AccessToken"
+        mc:Ignorable="d"
+        Title="" Height="150" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/Logo/logotoolkit.png">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Nhập AccessToken" VerticalAlignment="Top" Width="380"/>
+        <TextBox x:Name="txtToken" HorizontalAlignment="Center" Margin="0,31,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="380"/>
+        <dx:SimpleButton x:Name="btnLogin" Content="Đăng nhập"  Width="380" Height="28" VerticalAlignment="Top" Margin="0,58,0,0" Click="btnLogin_Click"/>
+        <TextBlock x:Name="txtOutput" HorizontalAlignment="Center" Margin="0,86,0,0" TextWrapping="Wrap" Text="..." VerticalAlignment="Top" Width="380"/>
+    </Grid>
+</Window>

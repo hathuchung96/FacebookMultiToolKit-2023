@@ -1,0 +1,33 @@
+﻿<dx:ThemedWindow
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+    xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+    xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon"
+    xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui" 
+    x:Class="FBMultiToolKitDemo.MainWindow"
+    Title="Bộ công cụ facebook" Height="700" Width="900" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/Logo/logotoolkit.png">
+    <DockPanel x:Name="MainPanel" Loaded="MainPanel_Loaded">
+        <dxr:RibbonControl x:Name="MainControl" DockPanel.Dock="Top" RibbonStyle="Office2019" MenuIconStyle="Office2013" ShowApplicationButton="False" SelectedPageChanged="MainControl_SelectedPageChanged" Height="55">
+            <dxr:RibbonControl.ToolbarItems>
+                <dxb:BarButtonItemLink BarItemName="newItem"/>
+            </dxr:RibbonControl.ToolbarItems>
+            <dxr:RibbonDefaultPageCategory>
+                <dxr:RibbonPage Caption="Spy Video" x:Name="SpyTab"/>
+                <dxr:RibbonPage Caption="Post Fanpage" x:Name="PostTab"/>
+            </dxr:RibbonDefaultPageCategory>
+        </dxr:RibbonControl>
+        <dxr:RibbonStatusBarControl DockPanel.Dock="Bottom">
+            <dxr:RibbonStatusBarControl.LeftItems>
+                <dxb:BarButtonItem x:Name="LicenseCode" Content="Không có quyền hoạt động" Foreground="#FFFF0303"/>
+            </dxr:RibbonStatusBarControl.LeftItems>
+            
+            <dxr:RibbonStatusBarControl.RightItems>
+                <dxb:BarButtonItem x:Name="logo" Content="FacebookToolKit@2023"/>
+            </dxr:RibbonStatusBarControl.RightItems>
+        </dxr:RibbonStatusBarControl>
+        <DockPanel LastChildFill="True" Name="DocView" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        </DockPanel>
+    </DockPanel>
+</dx:ThemedWindow>
